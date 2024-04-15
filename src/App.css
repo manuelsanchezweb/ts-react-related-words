@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+.border-pixel {
+  --size: 3px;
+  --sizeNeg: -3px;
+  box-shadow: var(--sizeNeg) 0 0 0 black, var(--size) 0 0 0 black,
+    0 var(--sizeNeg) 0 0 black, 0 var(--size) 0 0 black;
+}
+
+body {
+  font-family: 'Press Start 2P';
+}
